@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.header {
+  height: 60px;
+  background-color: black;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 60px;
+}
+
+.header-left {
+  color: white;
+  margin-left: 30px;
+}
+
+.header-list li {
+  margin-right: 30px;
+}
+
+.header-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-list ul {
+  display: flex;
+}
+
+.top-wrap {
+  background :url(eyecatch.jpg)no-repeat;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.top-text {
+  color: white;
+  font-style: italic;
+  font-size: 25px;
+  margin-left: 100px;
+  margin-top: 400px;
+}
+
+.box {
+  width: 100px;
+  height: 70px;
+  background-color: slategrey;
+  margin-right: 100px;
+  margin-top: 200px;
+}
+
+.news {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  height: 40px;
+  width: 50%;
+}
+
+.news-right {
+  background-color: black;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  width: 150px;
+  font-size: 10px;
+}
+
+.news-left {
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+.date {
+  color: olive;
+  font-size: 10px;
+}
+
+.news-text {
+  padding-left: 10px;
+  font-size: 10px;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.bottom-wrap {
+  background-color: black;
+  display: flex;
+  height: 370px;
+  background-color: black;
+}
+
+
+.bottom-right {
+  width: 40%;
+  margin-left: auto;
+  margin-right: 60px;
+  padding-top: 80px;
+}
+
+.orange {
+ width: 100%;
+ position: relative;
+}
+
+.bottom-text {
+  color: white;
+  font-style: italic;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.bottom-title {
+  color: white;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.bottom-left {
+  width: 50%;
+  position: absolute;
+  margin-left: 230px;
+  margin-top: 120px;
+}
+
+.misson {
+  height: 25px;
+  width: 100px;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.misson-text {
+  font-size: 10px;
+  font-style: italic;
+  line-height: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.service-wrap {
+  background-color: gainsboro;
+  margin-top: 100px;
+  padding-bottom: 150px;
+}
+
+.service-title {
+  text-align: center;
+ padding: 10px;
+}
+
+.service-left {
+  width: 35%;
+  background-color: white;
+  padding: 50px 50px 50px;
+  height: 120px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.coach-text {
+  font-size: 12px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.user-text {
+  font-size: 12px;
+}
+
+.web-text {
+  font-size: 12px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.service-btn {
+width: 100px;
+height: 25px;
+text-decoration: none;
+border: 1px solid #000;
+
+color: black;
+font-size: 10px;
+font-style: italic;
+text-align: center;
+line-height: 25px;
+float: right;
+margin-top: 10px;
+margin-bottom: 40px;
+}
+
+.service-right {
+  width: 50%;
+  float: right;
+}
+
+.service-right img {
+  width: 100%;
+}
+
+.service-bot-right {
+  width: 35%;
+  background-color: white;
+  padding: 50px 50px 50px;
+  height: 120px;
+  display: block;
+  margin-left: 500px;
+  margin-top: 600px;
+ 
+  position: absolute;
+}
+
+.service-bot-left {
+  width: 50%;
+  margin-top: 500px;
+}
+
+.service-bot-left img {
+  width: 100%;
+}
+
+.company-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-left {
+  background: url(company.jpeg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  color: white;
+  text-align: center;
+  width: 48%;
+  display: table;
+  
+  margin-top: 100px;
+}
+
+.company {
+ display: table-cell;
+ vertical-align: middle;
+}
+
+.company-title {
+ margin-bottom: 5px;
+ font-size: 20px;
+}
+
+.company-text {
+  font-size: 13px;
+}
+
+.company-right {
+  background: url(recruit.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 48%;
+  color: white;
+  text-align: center;
+  display: table;
+  
+  margin-top: 100px;
+}
+
+.recruit {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.recruit-title {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.recruit-text {
+  font-size: 13px;
+}
+
+.faq-wrap {
+  width: 80%;
+  height: 70px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.faq-text {
+  font-size: 12px;
+  left: 50%;
+}
+
+.faq-title {
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+}
+
+.footer-wrap {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+ width: 75%;
+ margin: 0 auto;
+}
+
+
+.footer-title {
+  font-size: 23px;
+  padding-top: 100px;
+  margin-bottom: 7px;
+}
+.footer-text {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.footer-message {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.contact {
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+
+.footer-btn {
+  border: 1px solid white;
+  font-size: 10px;
+  padding: 7px 14px;
+  margin-bottom: 50px;
+  display: inline-block;
+  margin-bottom: 100px;
+}
