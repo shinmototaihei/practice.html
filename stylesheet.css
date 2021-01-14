@@ -114,12 +114,14 @@ input, select {
 }
 
 .header-list li {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .header-list a {
   color: white;
   text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .header-list ul {
@@ -145,13 +147,7 @@ input, select {
   margin-top: 400px;
 }
 
-.box {
-  width: 100px;
-  height: 70px;
-  background-color: slategrey;
-  margin-right: 100px;
-  margin-top: 200px;
-}
+
 
 .news {
   position: absolute;
@@ -416,7 +412,7 @@ margin-bottom: 40px;
   left: 20px;
 }
 
-.footer-wrap {
+.contact-wrap {
   background-color: black;
   color: white;
   text-align: center;
@@ -429,16 +425,16 @@ margin-bottom: 40px;
 }
 
 
-.footer-title {
+.contact-title {
   font-size: 23px;
   padding-top: 100px;
   margin-bottom: 7px;
 }
-.footer-text {
+.contact-text {
   font-size: 12px;
   margin-bottom: 16px;
 }
-.footer-message {
+.contact-message {
   font-size: 12px;
   margin-bottom: 16px;
 }
@@ -448,11 +444,49 @@ margin-bottom: 40px;
   margin-bottom: 16px;
 }
 
-.footer-btn {
+.contact-btn {
   border: 1px solid white;
   font-size: 10px;
   padding: 7px 14px;
   margin-bottom: 50px;
   display: inline-block;
   margin-bottom: 100px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
+}
+
+.footer-list ul {
+  display: flex;
+}
+
+.footer-list li {
+  margin-right: 30px;
+}
+.footer-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.footer-title {
+  padding-left: 30px;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 12px;
+
 }
