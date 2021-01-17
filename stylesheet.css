@@ -1,101 +1,196 @@
-@charset "utf-8";
+@charset "UTF-8";
 
-/* リセットcss */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height:1;
+  line-height: 1.6;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
 }
 
+/*------------------------*/
+/*   　　共通のスタイル      */
+/*------------------------*/
+html {
+  height: 100%;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 .flex {
   display: flex;
@@ -133,8 +228,9 @@ body {
   font-size: 20px;
 }
 
+
 .header {
-  height: 60px;
+  height: 70px;
   background-color: black;
 }
 
@@ -142,23 +238,25 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 60px;
+  line-height: 70px;
 }
 
 .header-left {
   color: white;
-  margin-left: 30px;
+  margin-left: 35px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .header-list li {
-  margin-right: 20px;
+  margin-right: 35px;
+  display: inline-block;
 }
 
 .header-list a {
   color: white;
   text-decoration: none;
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 16px;
 }
 
 .header-list ul {
@@ -167,7 +265,7 @@ body {
 
 .top-wrap {
   background :url(eyecatch.jpg)no-repeat;
-  height: 550px;
+  height: 480px;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -217,148 +315,100 @@ body {
   color: #fff;
 }
 
-
-.bottom-wrap {
-  background-color: black;
-  display: flex;
-  height: 370px;
-  background-color: black;
+.mission {
+  position: relative;
+  background: #000;
+  margin-bottom: 10%;
+  z-index: 999;
 }
 
+.mission-content {
+  padding: 10% 0 10% 20%;
+  box-sizing: border-box;
+  width: 70%;
+}
 
-.bottom-right {
+.mission_title,
+.mission_text {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.mission_title {
+  font-size: 28px;
+}
+
+.mission-img {
   width: 40%;
-  margin-left: auto;
-  margin-right: 60px;
-  padding-top: 80px;
-}
-
-.orange {
- width: 100%;
- position: relative;
-}
-
-.bottom-text {
-  color: white;
-  font-style: italic;
-  font-size: 10px;
-  margin-bottom: 20px;
-}
-
-.bottom-title {
-  color: white;
-  font-style: italic;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-.bottom-left {
-  width: 50%;
   position: absolute;
-  margin-left: 230px;
-  margin-top: 120px;
-}
-
-.misson {
-  height: 25px;
-  width: 100px;
-  background-color: white;
-  align-items: center;
-  text-align: center;
-}
-
-.misson-text {
-  font-size: 10px;
-  font-style: italic;
-  line-height: 25px;
-  text-decoration: none;
-  color: black;
-}
-
-.service-wrap {
-  background-color: gainsboro;
-  margin-top: 100px;
-  padding-bottom: 150px;
+  bottom: -10%;
+  right: 5%;
+  z-index: -999;
 }
 
 .service-title {
+  font-size: 40px;
   text-align: center;
- padding: 10px;
+  padding: 20px 0;
+  line-height: 1;
+}
+.service-content {
+  position: relative;
+  padding-bottom: 15%;
 }
 
-.service-left {
-  width: 35%;
+.service-wrap {
+  background-color: lightgrey;
+  margin-bottom: 10%;
+}
+
+.service-img {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.service-inner {
   background-color: white;
-  padding: 50px 50px 50px;
-  height: 120px;
-  display: inline-block;
+  width: 40%;
+  padding: 5% 5%;
   position: absolute;
-  margin-left: 200px;
-  margin-top: 100px;
+  top: 25%;
+  left: 20%;
+  box-sizing: border-box;
 }
 
-.coach-text {
-  font-size: 12px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+.service-inner-second {
+  position: absolute;
+  left: 40%;
 }
-
-.user-text {
-  font-size: 12px;
-}
-
-.web-text {
-  font-size: 12px;
-  padding-bottom: 10px;
-  font-weight: bold;
+.service-img-second {
+  margin: 0 50% 0 0;
 }
 
 .service-btn {
-width: 100px;
-height: 25px;
-text-decoration: none;
-border: 1px solid #000;
-
-color: black;
-font-size: 10px;
-font-style: italic;
-text-align: center;
-line-height: 25px;
-float: right;
-margin-top: 10px;
-margin-bottom: 40px;
-}
-
-.service-right {
-  width: 50%;
-  float: right;
-}
-
-.service-right img {
-  width: 100%;
-}
-
-.service-bot-right {
-  width: 35%;
-  background-color: white;
-  padding: 50px 50px 50px;
-  height: 120px;
+  border: 1px solid black;
+  margin: 0 0 0 auto;
   display: block;
-  margin-left: 500px;
-  margin-top: 600px;
- 
-  position: absolute;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding: 0 20px;
+  color: #000;
+  text-align: center;
 }
 
-.service-bot-left {
-  width: 50%;
-  margin-top: 500px;
+.web-text {
+  margin-bottom: 15px;
 }
 
-.service-bot-left img {
-  width: 100%;
+.user-text {
+  margin-bottom: 15px;
 }
 
+.coach-text {
+  margin-bottom: 15px;
+}
 .company-wrap {
   display: flex;
   justify-content: space-between;
@@ -368,13 +418,13 @@ margin-bottom: 40px;
   background: url(company.jpeg)no-repeat;
   background-size: cover;
   background-position: center;
-  height: 120px;
+  height: 300px;
   color: white;
   text-align: center;
   width: 48%;
   display: table;
   
-  margin-top: 100px;
+ 
 }
 
 .company {
@@ -384,24 +434,21 @@ margin-bottom: 40px;
 
 .company-title {
  margin-bottom: 5px;
- font-size: 20px;
+ font-size: 40px;
 }
 
 .company-text {
-  font-size: 13px;
+  font-size: 20px;
 }
-
 .company-right {
   background: url(recruit.jpg)no-repeat;
   background-size: cover;
   background-position: center;
-  height: 120px;
+  height: 300px;
   width: 48%;
   color: white;
   text-align: center;
   display: table;
-  
-  margin-top: 100px;
 }
 
 .recruit {
@@ -411,38 +458,36 @@ margin-bottom: 40px;
 
 .recruit-title {
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .recruit-text {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .faq-wrap {
-  width: 80%;
-  height: 70px;
+  width: 70%;
+ 
   background-color: black;
   text-align: center;
   color: white;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 100px;
+  margin: 0 auto 10%;
+  margin-top: 110px;
+  margin-bottom: 110px;
+  padding: 50px;
 }
 
 .faq-text {
-  font-size: 12px;
-  left: 50%;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 80%;
 }
 
 .faq-title {
-  font-size: 18px;
-  position: absolute;
-  left: 20px;
+  font-size: 30px;
+  width: 10%;
+  display: inline-block;
 }
 
 .contact-wrap {
@@ -450,77 +495,158 @@ margin-bottom: 40px;
   color: white;
   text-align: center;
   width: 100%;
+  padding: 10% 0;
+  
+
 }
 
 .container {
- width: 75%;
+ width: 80%;
  margin: 0 auto;
 }
 
 
 .contact-title {
-  font-size: 23px;
-  padding-top: 100px;
-  margin-bottom: 7px;
+  font-size: 40px;
 }
 .contact-text {
-  font-size: 12px;
-  margin-bottom: 16px;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 .contact-message {
-  font-size: 12px;
-  margin-bottom: 16px;
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
 .contact {
-  font-size: 23px;
-  margin-bottom: 16px;
+  font-size: 40px;
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
 .contact-btn {
-  border: 1px solid white;
-  font-size: 10px;
-  padding: 7px 14px;
-  margin-bottom: 50px;
-  display: inline-block;
-  margin-bottom: 100px;
-  color: white;
-}
-
-.footer {
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-  position: relative;
-}
-
-.footer-list ul {
-  display: flex;
-}
-
-.footer-list li {
-  margin-right: 30px;
-}
-.footer-list a {
-  text-decoration: none;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.footer-title {
-  padding-left: 30px;
-}
-
-.footer-text {
-  position: absolute;
-  bottom: 0;
+  display: block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding: 0 20px;
+  color: #000;
   text-align: center;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 12px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 0 auto;
+}
 
+
+.footer-bar {
+  height: 70px;
+  line-height: 70px;
+}
+
+.top-footer {
+  text-align: center;
+  background-color: black;
+}
+
+.top-footer small {
+  text-align: center;
+  color: #fff;
+}
+
+.header-nav a{
+  color: white;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #fff;
+  line-height: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  #ham {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 100;
+  color: white;
+  transition: 0.4s;
+  }
+  #ham span {
+  left: 2px;
+  height: 2px;
+  width: 35px;
+  position: absolute;
+  display: block;
+  background-color: white;
+  transition: 0.8s;
+  }
+  #ham span:nth-of-type(1) {
+    top: 10px;
+  }
+  #ham span:nth-of-type(2) {
+    top: 20px;
+  }
+  #ham span:nth-of-type(3) {
+    top: 30px;
+  }
+  .header-list {
+    display: none;
+  }
+
+  .news {
+    width: 100%;
+  }
+ 
+  .top-wrap {
+    height: 700px;
+  }
+
+  .top-text {
+    text-align: center;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+  }
+
+  .mission-content {
+    width: 80%;
+  }
+
+  .service-img,
+  .service-inner
+   {
+    width: 90%;
+    position: static;
+    margin: 0 auto;
+  
+  }
+
+  .company-wrap {
+    flex-wrap: wrap;
+  }
+  .company-left,
+  .company-right {
+    width: 100%;
+  }
+  
+  .top-footer .header-logo {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  }
 }
