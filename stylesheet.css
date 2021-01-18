@@ -555,11 +555,11 @@ body {
   color: #fff;
 }
 
-.header-nav a{
+.header-list a{
   color: white;
 }
 
-.header-nav li {
+.header-list li {
   display: inline-block;
   margin-right: 35px;
   font-size: 16px;
