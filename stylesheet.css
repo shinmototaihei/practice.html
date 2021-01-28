@@ -1,13 +1,3 @@
-@charset "UTF-8";
-
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
 html,
 body,
 div,
@@ -86,567 +76,327 @@ video {
   background: transparent;
 }
 
-body {
-  line-height: 1.6;
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+body {
+    line-height:;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
 }
 
 nav ul {
-  list-style: none;
+    list-style:none;
 }
 
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+    quotes:none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
 }
 
 a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
 }
 
 del {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse:collapse;
+    border-spacing:0;
 }
 
 /* change border colour to suit your needs */
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
 }
 
-input,
-select {
-  vertical-align: middle;
-}
-
-/*------------------------*/
-/*   　　共通のスタイル      */
-/*------------------------*/
-html {
-  height: 100%;
-}
-
-a {
-  color: #333333;
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+input, select {
+    vertical-align:middle;
 }
 
 body {
-  color: #333333;
-  height: 100%;
+  margin: 0;
+  font-size: 100%;
+  width: 100%;
 }
 
-.mgb-15 {
-  margin-bottom: 15px;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.common-btn {
-  display: block;
-  width: 130px;
-  height: 40px;
-  line-height: 40px;
-  background: #fff;
-  padding: 0 20px;
-  color: #000;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 40px;
-  line-height: 1;
-}
-
-.section-title span {
-  font-size: 20px;
-}
-
-
-.header {
-  height: 70px;
-  background-color: black;
+ul {
+  list-style: none;
 }
 
 .header-wrap {
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 70px;
+  height: 70px;
 }
 
-.header-left {
+.header-logo {
   color: white;
-  margin-left: 35px;
-  font-size: 20px;
+  font-size: 16px;
+  padding-left: 20px;
   font-weight: bold;
 }
 
-.header-list li {
-  margin-right: 35px;
-  display: inline-block;
-}
-
-.header-list a {
+.header-nav li {
   color: white;
-  text-decoration: none;
-  font-size: 16px;
+  padding-right: 20px;
 }
 
-.header-list ul {
+.header-nav ul {
   display: flex;
 }
 
 .top-wrap {
-  background :url(eyecatch.jpg)no-repeat;
-  height: 480px;
+  background: url(eyecatch.jpg)no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
+  height: 600px;
   position: relative;
 }
 
-
 .top-text {
   color: white;
+  font-weight: bold;
   font-style: italic;
+  font-size: 50px;
   position: absolute;
   top: 60%;
-  left: 10%;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1;
+  left: 7%;
 }
 
-
-
-.news {
+.news-wrap {
+  display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
   width: 50%;
- 
-}
-.news-content {
-  background: #fff;
-  width: 80%;
   height: 70px;
 }
 
-.news_date {
+.news {
+  width : 80%;
+  background-color: white;
+}
+
+.news-text {
   padding-left: 5px;
 }
 
-.news_title {
-  padding: 0 15px;
-}
 .news-icon {
-  background: #000;
   width: 20%;
-  height: 70px;
-  line-height: 70px;
+  background-color: black;
+  color: white;
   text-align: center;
-  color: #fff;
+  line-height: 70px;
 }
 
-.mission {
+.misson-wrap {
+  background-color: black;
   position: relative;
-  background: #000;
-  margin-bottom: 10%;
-  z-index: 999;
+  height: 450px;
+ margin-bottom: 10%;
 }
 
-.mission-content {
-  padding: 10% 0 10% 20%;
-  box-sizing: border-box;
+.misson-content {
   width: 70%;
+  box-sizing: border-box;
+  padding: 10% 0 10% 15%;
+   z-index: 1;
+   position: relative;
 }
-
-.mission_title,
-.mission_text {
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.mission_title {
+.misson-title {
+  color: white;
   font-size: 28px;
+  margin-bottom: 25px;
 }
 
-.mission-img {
+.misson-text {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.misson-btn {
+  height: 30px;
+  width: 150px;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+  line-height: 30px;
+  z-index: -999;
+}
+
+.misson-img img {
   width: 40%;
   position: absolute;
   bottom: -10%;
   right: 5%;
-  z-index: -999;
 }
 
-.service-title {
-  font-size: 40px;
-  text-align: center;
-  padding: 20px 0;
-  line-height: 1;
+.service-wrap {
+  background-color: lightgray;
 }
+
 .service-content {
   position: relative;
   padding-bottom: 15%;
 }
 
-.service-wrap {
-  background-color: lightgrey;
-  margin-bottom: 10%;
+.service-title {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 28px;
 }
 
-.service-img {
+.service-img img {
   width: 50%;
   margin-left: 50%;
 }
 
 .service-inner {
-  background-color: white;
   width: 40%;
-  padding: 5% 5%;
+  height: 270px;
+  background-color: white;
   position: absolute;
   top: 25%;
   left: 20%;
   box-sizing: border-box;
+  padding: 5%;
+}
+
+.service-btn {
+  color: black;
+  display: block;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  line-height: 30px;
+  border: black 1px solid;
+  margin: 0 0 0 auto;
+}
+
+.service-img-second img {
+  margin: 0 50% 0 0;
 }
 
 .service-inner-second {
   position: absolute;
+  top: 15%;
   left: 40%;
 }
-.service-img-second {
-  margin: 0 50% 0 0;
-}
 
-.service-btn {
-  border: 1px solid black;
-  margin: 0 0 0 auto;
-  display: block;
-  width: 130px;
-  height: 40px;
-  line-height: 40px;
-  background: #fff;
-  padding: 0 20px;
-  color: #000;
-  text-align: center;
-}
-
-.web-text {
-  margin-bottom: 15px;
-}
-
-.user-text {
-  margin-bottom: 15px;
-}
-
-.coach-text {
-  margin-bottom: 15px;
-}
-.company-wrap {
+.conpany-wrap {
   display: flex;
   justify-content: space-between;
+  height: 300px;
 }
 
-.company-left {
+.conpany {
   background: url(company.jpeg)no-repeat;
   background-size: cover;
   background-position: center;
-  height: 300px;
-  color: white;
-  text-align: center;
   width: 48%;
-  display: table;
-  
- 
-}
-
-.company {
- display: table-cell;
- vertical-align: middle;
-}
-
-.company-title {
- margin-bottom: 5px;
- font-size: 40px;
-}
-
-.company-text {
-  font-size: 20px;
-}
-.company-right {
-  background: url(recruit.jpg)no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  width: 48%;
-  color: white;
   text-align: center;
+  color: white;
+  height: 200px;
   display: table;
+  margin: 150px 0;
 }
 
-.recruit {
-  display: table-cell;
-  vertical-align: middle;
+.conpany-content {
+display: table-cell;
+vertical-align: middle;
+}
+
+.conpany-title {
+  font-size: 28px;
 }
 
 .recruit-title {
-  margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 28px;
 }
 
-.recruit-text {
-  font-size: 20px;
-}
-
-.faq-wrap {
-  width: 70%;
- 
-  background-color: black;
+.recruit {
+  background: url(recruit.jpg)no-repeat;
+   background-size: cover;
+  background-position: center;
+  width: 48%;
   text-align: center;
   color: white;
-  margin: 0 auto 10%;
-  margin-top: 110px;
-  margin-bottom: 110px;
-  padding: 50px;
+  height: 200px;
+  align-items: center;
+  display: table;
+  margin: 150px 0;
 }
 
-.faq-text {
-  font-size: 20px;
-  display: inline-block;
-  text-align: center;
-  width: 80%;
-}
-
-.faq-title {
-  font-size: 30px;
-  width: 10%;
-  display: inline-block;
-}
-
-.contact-wrap {
-  background-color: black;
-  color: white;
-  text-align: center;
-  width: 100%;
-  padding: 10% 0;
-  
-
-}
-
-.container {
- width: 80%;
- margin: 0 auto;
-}
-
-
-.contact-title {
-  font-size: 40px;
-}
-.contact-text {
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-.contact-message {
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.contact {
-  font-size: 40px;
-  margin-bottom: 40px;
-  line-height: 1;
-}
-
-.contact-btn {
-  display: block;
-  width: 130px;
-  height: 40px;
-  line-height: 40px;
-  background: #fff;
-  padding: 0 20px;
-  color: #000;
-  text-align: center;
-  background: none;
-  border: 1px solid #fff;
-  color: #fff;
-  margin: 0 auto;
-}
-
-
-.footer-bar {
-  height: 70px;
-  line-height: 70px;
-}
-
-.top-footer {
-  text-align: center;
-  background-color: black;
-}
-
-.top-footer small {
-  text-align: center;
-  color: #fff;
-}
-
-.header-list a{
-  color: white;
-}
-
-.header-list li {
-  display: inline-block;
-  margin-right: 35px;
-  font-size: 16px;
-}
-
-.header-logo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 35px;
-  color: #fff;
-  line-height: 70px;
-}
-
-@media screen and (max-width: 768px) {
-  #ham {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 100;
-  color: white;
-  transition: 0.4s;
-  }
-  #ham span {
-  left: 2px;
-  height: 2px;
-  width: 35px;
-  position: absolute;
-  display: block;
-  background-color: white;
-  transition: 0.8s;
-  }
-  #ham span:nth-of-type(1) {
-    top: 10px;
-  }
-  #ham span:nth-of-type(2) {
-    top: 20px;
-  }
-  #ham span:nth-of-type(3) {
-    top: 30px;
-  }
-  .header-list {
-    display: none;
-  }
-
-  .news {
-    width: 100%;
-  }
- 
-  .top-wrap {
-    height: 700px;
-  }
-
-  .top-text {
-    text-align: center;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-  }
-
-  .mission-content {
-    width: 80%;
-  }
-
-  .service-img,
-  .service-inner
-   {
-    width: 90%;
-    position: static;
-    margin: 0 auto;
-  
-  }
-
-  .company-wrap {
-    flex-wrap: wrap;
-  }
-  .company-left,
-  .company-right {
-    width: 100%;
-  }
-  
-  .top-footer .header-logo {
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  }
+.recruit-content {
+  display: table-cell;
+  vertical-align: middle;
 }
